@@ -164,7 +164,7 @@ By the end of Stage 1, the team has:
 - Completed brainstorming with alternative ideas  
 - Identified risks and mitigation strategies  
 
-# 8. Planning and Technical Architecture.
+# Planning and Technical Architecture.
 
 ## Introduction
 This document presents a structured timeline outlining the major phases and milestones of the project, from initial ideation to final closure. Each stage highlights the key deliverables necessary to ensure smooth progress and alignment with project goals. The plan provides a clear overview of the project’s current position—having completed the Idea Development phase and now progressing through Project Planning—while also mapping out the upcoming stages, including Technical Documentation, MVP Development, and Project Closure.
