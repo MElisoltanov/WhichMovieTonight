@@ -166,6 +166,10 @@ By the end of Stage 1, the team has:
 
 **Stage 2: Planning and Technical Architecture**.
 
+## Introduction
+This document presents a structured timeline outlining the major phases and milestones of the project, from initial ideation to final closure. Each stage highlights the key deliverables necessary to ensure smooth progress and alignment with project goals. The plan provides a clear overview of the project’s current position—having completed the Idea Development phase and now progressing through Project Planning—while also mapping out the upcoming stages, including Technical Documentation, MVP Development, and Project Closure.
+For a detailed view of the complete schedule, you can consult the project timeline directly through the Notion link.
+
 Here you have a link for our planning, take a look :
 
 https://www.notion.so/Project-Timeline-2c4a5dedfa2d808d8cb2ed0d910455e4?source=copy_link
