@@ -20,7 +20,7 @@ Portfolio Project — France Program
 5. [Project Scope](#5-project-scope)  
 6. [Risks & Mitigation](#6-risks--mitigation)  
 7. [Expected Outcome](#7-expected-outcome)  
-
+8. [Planning and Technical Architecture](#8-Planning-and-Technical-Architecture)
 ---
 
 ## 1. Team Formation & Roles
@@ -164,7 +164,7 @@ By the end of Stage 1, the team has:
 - Completed brainstorming with alternative ideas  
 - Identified risks and mitigation strategies  
 
-**Stage 2: Planning and Technical Architecture**.
+# 8. Planning and Technical Architecture.
 
 ## Introduction
 This document presents a structured timeline outlining the major phases and milestones of the project, from initial ideation to final closure. Each stage highlights the key deliverables necessary to ensure smooth progress and alignment with project goals. The plan provides a clear overview of the project’s current position—having completed the Idea Development phase and now progressing through Project Planning—while also mapping out the upcoming stages, including Technical Documentation, MVP Development, and Project Closure.
