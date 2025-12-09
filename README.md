@@ -166,27 +166,6 @@ By the end of Stage 1, the team has:
 
 **Stage 2: Planning and Technical Architecture**.
 
-```mermaid
-gantt
-    dateFormat  DD-MM-YYYY
-    title WhichMovieTonight – Project Timeline
+Here you have a link for our planning, take a look :
 
-    %% Stage 1 à 6 sur une seule vue
-    section Stage 1 – Idea Development
-    Idea Development           :done,    01-12-2025, 07-12-2025
-
-    section Stage 2 – Project Planning
-    Project Planning           :active,  08-12-2025, 14-12-2025
-
-    section Stage 3 – Technical Documentation
-    Draft & Refinement         :         15-12-2025, 09-01-2026
-
-    section Stage 4 – MVP Development
-    Core Features              :         12-01-2026, 06-03-2026
-
-    section Stage 5 – Project Closure
-    Testing & Presentation     :         09-03-2026, 15-03-2026
-
-    section Stage 6 – Landing Page
-    Landing Page Delivery      :         16-03-2026, 20-03-2026
-```
+https://www.notion.so/Project-Timeline-2c4a5dedfa2d808d8cb2ed0d910455e4?source=copy_link
