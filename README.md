@@ -20,7 +20,7 @@ Portfolio Project — France Program
 5. [Project Scope](#5-project-scope)  
 6. [Risks & Mitigation](#6-risks--mitigation)  
 7. [Expected Outcome](#7-expected-outcome)  
-8. [Planning and Technical Architecture](#8-Planning-and-Technical-Architecture)
+8. [Planning and Technical Architecture](#Planning-and-Technical-Architecture)
 ---
 
 ## 1. Team Formation & Roles
