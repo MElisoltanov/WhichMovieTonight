@@ -1,6 +1,4 @@
 
----
-
 # Stage 1 Report — Team Formation, Brainstorming & MVP Definition
 
 ---
@@ -99,7 +97,7 @@ A platform connecting medical professionals with scientific writers for co-autho
 
 ### Idea 3 — Gym Facility Management Software (Instructor-Proposed)
 
-Tool for managing gym rooms, equipment inventory, schedules, and user access.
+Tool for managing gym rooms, schedules, and user access.
 
 **Reason for rejection:**
 
@@ -165,6 +163,8 @@ A centralized web application that:
 | One-to-One Chat                | Low         | Abandoned, not enough time                         | 🔴     |
 | User Likes on Reviews          | Medium      | Optional enhancement                               | 🟡     |
 | Add to Favorites               | Medium      | Optional enhancement                               | 🟡     |
+| Streaming Platform Links (Netflix, Disney+, Prime Video…) | High | Direct links to the movie’s page on major streaming platforms | 🟢 |
+
 
 **Color Legend:**
 🟢 **Green** = MVP (mandatory)
@@ -206,7 +206,7 @@ A centralized web application that:
 
 ## 8. Expected Outcome
 
-By the end of Stage 1, the team has:
+By the end of Stage 1, we have accomplished:
 
 * A validated MVP concept
 * Clear collaboration structure
