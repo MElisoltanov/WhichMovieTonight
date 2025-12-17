@@ -1,229 +1,143 @@
+# 🎬 WhichMovieTonight
 
-# Stage 1 Report — Team Formation, Brainstorming & MVP Definition
-
----
-
-## Introduction
-
-We're a two-person team: **Flora Salanson** and **Moussa Elisoltanov**. We've already worked together on several technical projects, so we know each other’s strengths and work well together. Flora is in charge of the **backend**, handling APIs, databases, and the core logic. Moussa manages the **frontend**, making sure the app is intuitive, clean, and responsive.
-
-For this portfolio project, we chose to build **WhichMovieTonight**, a web application that helps users quickly find a movie without wasting time browsing across multiple streaming platforms. The goal is simple: gather everything in one place—movie info, user reviews, and streaming availability—to make the movie-picking process easier and faster.
-
-Below is the Table of Contents that walks through the different parts of our Stage 1 report.
+**WhichMovieTonight** is a responsive web application designed to help users quickly find a movie to watch without wasting time browsing across multiple streaming platforms.  
+The goal is to centralize **movie information**, **community reviews**, and **streaming availability** in one place.
 
 ---
 
-## Table of Contents
+## Team
 
-1. [Team Formation & Roles](#1-team-formation--roles)
-2. [Brainstorming & Idea Evaluation](#2-brainstorming--idea-evaluation)
+- **Flora Salanson** - Backend Developer  
+  APIs, database design, business logic, security
 
-   * [Idea 1 — WhichMovieTonight (Selected)](#idea-1--whichmovietonight-selected)
-   * [Idea 2 — Medical Collaboration Platform (Instructor-Proposed)](#idea-2--medical-collaboration-platform-instructor-proposed)
-   * [Idea 3 — Gym Facility Management Software (Instructor-Proposed)](#idea-3--gym-facility-management-software-instructor-proposed)
-3. [Final Decision & MVP Refinement](#3-final-decision--mvp-refinement)
+- **Moussa Elisoltanov** - Frontend Developer  
+  UI/UX, API integration, responsive design
 
-   * [Problem Statement](#problem-statement)
-   * [Proposed Solution](#proposed-solution)
-   * [Target Users](#target-users)
-   * [Application Type](#application-type)
-4. [MVP Key Features (SMART-Aligned)](#4-mvp-key-features-smart-aligned)
-5. [Detailed MVP Features — Feasibility Overview](#5-detailed-mvp-features--feasibility-overview)
-6. [Project Scope](#6-project-scope)
-7. [Risks & Mitigation](#7-risks--mitigation)
-8. [Expected Outcome](#8-expected-outcome)
-9. [Stage 2 — Planning and Technical Architecture](#9-stage-2--planning-and-technical-architecture)
+We have previously collaborated on several technical projects (Binary Trees, Simple Shell, Hbnb), which allows us to work efficiently with clearly defined roles.
 
 ---
 
-## 1. Team Formation & Roles
+##  Project Concept
 
-### Team Members
+Choosing a movie can quickly become frustrating due to:
+- too many platforms
+- too many choices
+- scattered information
 
-**Flora Salanson — Backend Developer**
-
-* Experienced in backend architecture, APIs, and database design.
-
-**Moussa Elisoltanov — Frontend Developer**
-
-* Specializes in responsive UI/UX, frontend logic, and integration with backend APIs.
-
-### Team Strengths
-
-* Previously collaborated on Binary Trees, Simple Shell, and Hbnb.
-* Complementary skill sets.
-* Efficient coordination during previous projects.
-
-### Collaboration Strategy
-
-* In-person meetings when possible.
-* Daily communication via WhatsApp & Slack.
-* Shared documentation on Notion / Google Docs.
-* Decision-making through discussion and consensus.
-
-### Stakeholders
-
-* No external stakeholders at this stage.
+**WhichMovieTonight** provides a simple solution:  
+👉 **a single platform** to quickly decide what to watch tonight.
 
 ---
 
-## 2. Brainstorming & Idea Evaluation
+##  Problem Statement
 
-### Idea 1 — WhichMovieTonight (Selected)
-
-A mobile-first platform that helps users quickly find a movie using:
-
-* Community-driven reviews
-* Streaming availability information
-* Movie metadata (genres, synopsis, cast, etc.)
-* Simple community chat (future enhancement)
-
-**Risk:** Reliance on an unofficial JustWatch API, which may change without notice.
+Users spend too much time browsing multiple platforms just to find a movie to watch.
 
 ---
 
-### Idea 2 — Medical Collaboration Platform (Instructor-Proposed)
+##  Proposed Solution
 
-A platform connecting medical professionals with scientific writers for co-authoring medical publications.
+A centralized web application that allows users to:
 
-**Reason for rejection:**
-
-* Highly specialized domain
-* Requires strict data protection
-* Complex multi-role workflows
-* Not aligned with team interests
+- Browse a **movie catalog**
+- Read **community ratings and comments**
+- Check **streaming availability**
+- Access **direct links** to streaming platforms (Netflix, Prime Video, Disney+, etc.)
 
 ---
 
-### Idea 3 — Gym Facility Management Software (Instructor-Proposed)
+## Target Users
 
-Tool for managing gym rooms, schedules, and user access.
-
-**Reason for rejection:**
-
-* Requires admin-heavy role management
-* Too broad for a short MVP timeline
-* Less appealing than a cinema-oriented project
+- Movie enthusiasts
+- Casual viewers
+- Streaming platform subscribers
+- Anyone looking for quick movie recommendations
 
 ---
 
-## 3. Final Decision & MVP Refinement
+## Application Type
 
-### Problem Statement
-
-Users spend too much time browsing multiple platforms just to find a movie they want to watch.
-
-### Proposed Solution
-
-A centralized web application that:
-
-* Aggregates movie information
-* Displays streaming availability
-* Shows commentary and ratings
-* Helps users choose a movie faster and more easily
-
-### Target Users
-
-* Movie lovers
-* Casual viewers
-* Streaming platform users
-* Anyone looking for quick movie recommendations
-
-### Application Type
-
-* Responsive Web Application
-* Mobile-first
-* Accessible across all devices
+- Responsive Web Application
+- Mobile-first
+- Accessible on desktop, tablet, and mobile devices
 
 ---
 
-## 4. MVP Key Features (SMART-Aligned)
+## MVP Features
 
-1. **Movie Catalog** — At least 200 films with title, synopsis, genre, and average rating.
-2. **User Accounts** — Secure registration and login with proper authentication.
-3. **Ratings & Comments** — Authenticated users can publish ratings and comment on movies.
-4. **Availability Information** — API integration to show streaming or library access for each movie.
+Core features planned for the first release:
 
----
+- 🎞️ **Movie Catalog**  
+  - Title, synopsis, genre, cast, average rating  
+  - At least 200 movies
 
-## 5. Detailed MVP Features — Feasibility Overview (Color-Coded)
+- 🔐 **User Accounts**  
+  - Secure signup and login  
+  - Authentication system
 
-| Feature                        | Feasibility | Comment                                            | Status |
-| ------------------------------ | ----------- | -------------------------------------------------- | ------ |
-| Movie Catalog                  | High        | Data pulled from API + cached locally              | 🟢     |
-| User Accounts                  | High        | Standard signup/login                              | 🟢     |
-| Ratings & Comments             | High        | Core social feature                                | 🟢     |
-| Streaming Availability         | Medium      | Requires fallback system                           | 🟢     |
-| Community Forum / Chat         | Medium-Low  | Optional, implemented last                         | 🟡     |
-| Geolocation of Media Libraries | Medium      | Optional feature                                   | 🟡     |
-| Badge System                   | Medium      | Optional: users can earn badges by posting reviews | 🟡     |
-| Movie Trailers                 | Medium-Low  | Data pulled from YouTube API                       | 🟡     |
-| Wallpaper                      | Medium      | Optional, for immersion                            | 🟡     |
-| AI Recommendations             | Low         | Abandoned, not enough time or technical skills     | 🔴     |
-| One-to-One Chat                | Low         | Abandoned, not enough time                         | 🔴     |
-| User Likes on Reviews          | Medium      | Optional enhancement                               | 🟡     |
-| Add to Favorites               | Medium      | Optional enhancement                               | 🟡     |
-| Streaming Platform Links (Netflix, Disney+, Prime Video…) | High | Direct links to the movie’s page on major streaming platforms | 🟢 |
+- ⭐ **Ratings & Comments**  
+  - Authenticated users can rate and comment on movies
 
-
-**Color Legend:**
-🟢 **Green** = MVP (mandatory)
-🟡 **Yellow** = Optional / extra features
-🔴 **Red** = Not feasible / abandoned
+- 📺 **Streaming Availability**  
+  - Display platforms where the movie is available  
+  - Direct links to streaming services
 
 ---
 
-## 6. Project Scope
+## Optional Features (Post-MVP)
 
-### In Scope
-
-* Movie catalog
-* User login & registration
-* Rating and comment system
-* Streaming availability
-* Basic chat/forum (if timeline allows)
-
-### Out of Scope
-
-* AI recommendations
-* Friend system / user profiles
-* Watchlists / playlists
-* Private messaging
+- Simple community forum or chat
+- Badge system for active users
+- Add to favorites
+- Likes on reviews
+- Movie trailers
+- Media library geolocation
 
 ---
 
-## 7. Risks & Mitigation
+## Out of Scope Features
 
-| Risk                        | Impact                              | Likelihood | Mitigation Strategy                             |
-| --------------------------- | ----------------------------------- | ---------- | ----------------------------------------------- |
-| Unofficial API instability  | Missing or broken availability data | Medium     | Cache data locally; add abstraction layer       |
-| Scope creep                 | MVP not delivered on time           | High       | Strict feature prioritization; freeze new ideas |
-| Learning curve on new tools | Potential slowdowns                 | Medium     | Pair programming + learning sessions            |
-| Chat feature complexity     | Delays core features                | Medium     | Implement only at the end; keep chat minimal    |
-| Data integrity issues       | Incorrect ratings/comments          | Low        | Add backend validation + database constraints   |
+- AI-based recommendations
+- Private messaging
+- Friend system
+- Advanced watchlists or playlists
 
 ---
 
-## 8. Expected Outcome
+## Risks & Mitigation
 
-By the end of Stage 1, we have accomplished:
+- **Unofficial API dependency** for streaming availability  
+  → Mitigation: local caching and backend abstraction layer
 
-* A validated MVP concept
-* Clear collaboration structure
-* Documented brainstorming and alternative ideas
-* Identified major risks with mitigation plans
-* A consistent technical and planning foundation
+- **Scope creep**  
+  → Mitigation: strict MVP prioritization
+
+- **Chat feature complexity**  
+  → Mitigation: implemented only if time allows
 
 ---
 
-## 9. Stage 2 — Planning and Technical Architecture
+## Tech Stack (Planned)
 
-### Project Planning Summary
+- **Frontend**: HTML, CSS, JavaScript (framework to be defined)
+- **Backend**: REST API
+- **Database**: Relational database
+- **External APIs**: Movie data & streaming availability
+- **Authentication**: Sessions or JWT
 
-This document presents a structured timeline outlining the major phases and milestones of the project, from initial ideation to final closure. Each stage highlights the key deliverables necessary to ensure smooth progress and alignment with project goals. The plan provides a clear overview of the project’s current position—having completed the Idea Development phase and now progressing through Project Planning—while also mapping out the upcoming stages, including Technical Documentation, MVP Development, and Project Closure.
+---
 
-For a detailed view of the complete schedule, you can consult the project timeline directly through the Notion link:
+## Expected Outcome
 
-[Project Timeline on Notion](https://www.notion.so/Project-Timeline-2c4a5dedfa2d808d8cb2ed0d910455e4?source=copy_link)
+By the end of the project, **WhichMovieTonight** will provide a smooth and efficient experience to:
+- discover movies
+- read reliable community reviews
+- instantly know where to watch a movie
+
+---
+
+🎬 *WhichMovieTonight — Spend less time searching, more time watching.*
+
+Made with ❤️ and fun by an awesome team Moussa and Flora, for Holberton School portfolio project😎🍿
 
 ---
