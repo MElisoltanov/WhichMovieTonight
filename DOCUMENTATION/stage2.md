@@ -1,4 +1,4 @@
-# 9. Stage 2 - Planning and Technical Architecture
+# Stage 2 - Planning and Technical Architecture
 
 ## Project Planning Summary
 
