@@ -23,8 +23,7 @@ For a detailed view of the complete schedule, you can consult the project timeli
 | **Stage 5** | 9 march to 20 march | Project Closure *(Planned)* | Final testing and validation<br>Bug fixing and optimization<br>Application deployment<br>Final presentation and demo<br>Project retrospective and documentation cleanup | Deployed application<br>Final presentation<br>Project closure |
 
 
-### MVP Development Planning highlight
-
+### Key Highlights of the MVP Development Plan
 
 
 | Step | Phase | Objectives | Main Tasks |Estimated Timeline| Deliverable |
