@@ -155,21 +155,20 @@ A centralized web application that:
 | User Accounts                  | High        | Standard signup/login                              | 🟢     |
 | Ratings & Comments             | High        | Core social feature                                | 🟢     |
 | Streaming Availability         | Medium      | Requires fallback system                           | 🟢     |
-| Community Forum / Chat         | Medium-Low  | Optional, implemented last                         | 🟡     |
 | Geolocation of Media Libraries | Medium      | Optional feature                                   | 🟡     |
-| Badge System                   | Medium      | Optional: users can earn badges by posting reviews | 🟡     |
 | Movie Trailers                 | Medium-Low  | Data pulled from YouTube API                       | 🟡     |
 | Wallpaper                      | Medium      | Optional, for immersion                            | 🟡     |
+| Add to Favorites               | Medium      | Optional enhancement                               | 🟡     |
+| Community Forum / Chat         | Medium-Low  | Optional, implemented last                         | 🟠     |
+| User Likes on Reviews          | Medium      | Optional enhancement                               | 🟠     |
+| Badge System                   | Medium      | Optional: users can earn badges by posting reviews | 🟠     |
 | AI Recommendations             | Low         | Abandoned, not enough time or technical skills     | 🔴     |
 | One-to-One Chat                | Low         | Abandoned, not enough time                         | 🔴     |
-| User Likes on Reviews          | Medium      | Optional enhancement                               | 🟡     |
-| Add to Favorites               | Medium      | Optional enhancement                               | 🟡     |
-| Streaming Platform Links (Netflix, Disney+, Prime Video…) | High | Direct links to the movie’s page on major streaming platforms | 🟢 |
-
 
 **Color Legend:**
 🟢 **Green** = MVP (mandatory)
 🟡 **Yellow** = Optional / extra features
+🟠 **Orange** = Optional / extra features
 🔴 **Red** = Not feasible / abandoned
 
 ---
