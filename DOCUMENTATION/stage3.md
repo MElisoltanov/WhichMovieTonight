@@ -1,8 +1,6 @@
-## Stage 3: Technical Documentation
+## 1. User Stories and Mockups
 
-## 0. Define User Stories and Mockups
-
-### 0.1. User Stories (MoSCoW Prioritization)
+### 1.1 Prioritized User Stories (MoSCoW Method)
 
 #### Must Have (MVP)
 
@@ -86,13 +84,13 @@
       As a (logged‑in user), I want to post short messages in a simple movie discussion area, so that I can talk about recommendations with other users.
     - **Related Feature(s)**: Community Forum / Chat  
 
-13. **Like other users’ reviews**
+11. **Like other users’ reviews**
 
     - **User Story**  
       As a (logged‑in) user, I want to like reviews that I find useful, so that the most helpful comments are highlighted.
     - **Related Feature(s)**: User Likes on Reviews  
 
-14. **Earn badges based on activity**
+12. **Earn badges based on activity**
 
     - **User Story**  
       As an (active) user, I want to earn badges when I contribute (posting reviews, ratings, etc.), so that I feel rewarded for participating.
@@ -118,23 +116,47 @@
 
 ---
 
-### 0.2. Mockups (to be created)
+### 1.2 Mockups
 
-For this MVP, we plan to create simple wireframes (e.g., in Figma) for the following **main screens**:
+You can take a look of our mockups on the following directory (on github) : 
 
-1. **Home / Movie Catalog Screen**
-   - List of movies with poster, title, rating, and quick access to details.
+MElisoltanov/WhichMovieTonight/DOCUMENTATION/Mockups
 
-2. **Movie Detail Screen**
-   - Extended movie information (synopsis, genres, cast, average rating, streaming availability, platform links).
-   - Section for user ratings and comments.
-   - (Later) optional trailer and “add to favorites” button.
+---
 
-3. **Authentication Screens**
-   - Login page (email/username + password).
-   - Signup page (basic fields for account creation).
+## 2. System Architecture
 
-4. **Optional Community Screen (if implemented)**
-   - Simple chat / forum layout to post and read short messages.
+### 2.1 High-Level Architecture Diagram
 
-Links or images of these mockups will be added here once the wireframes are created.
+```mermaid
+flowchart TD
+    A[Client<br/>React Frontend] -- JWT/HTTPS --> B[API Gateway<br/>Django REST]
+    B --> C[Application Layer<br/>Movies/Auth/Admin]
+    C --> D[Database<br/>PostgreSQL]
+```
+
+### 2.2 Data Flow Description
+
+- **Client (React/Vite):** User interface, sends requests, receives data.
+- **API Gateway (Django REST):** Handles authentication, routes API calls.
+- **Application Logic:** Business logic for movies, user accounts, admin.
+- **Database (PostgreSQL):** Stores all persistent data (movies, users, ratings, comments).
+
+### 2.3 Technology Stack Summary
+
+| Layer | Technology | Purpose |
+|-------|-----------|---------|
+| **Frontend** | React 18.2 | UI components and state management |
+| | React Router DOM 6.20 | Client-side routing |
+| | Axios 1.6 | HTTP client for API calls |
+| | TailwindCSS 3.3 | Utility-first CSS styling |
+| | Vite 5.0 | Fast build tool and dev server |
+| **Backend** | Django 5.0 | Web framework |
+| | Django REST Framework 3.14 | REST API toolkit |
+| | SimpleJWT 5.3 | JWT authentication |
+| | CORS Headers 4.3 | Cross-origin resource sharing |
+| **Database** | PostgreSQL | Relational database |
+| | psycopg2-binary 2.9 | PostgreSQL adapter |
+| **Hosting** | To be determined | (Heroku, AWS, DigitalOcean, or Hugo) |
+
+---
