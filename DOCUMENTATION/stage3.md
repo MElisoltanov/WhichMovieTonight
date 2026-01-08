@@ -165,6 +165,7 @@
 You can take a look of our mockups on the following directory (on github) : 
 
 MElisoltanov/WhichMovieTonight/DOCUMENTATION/Mockups
+https://github.com/MElisoltanov/WhichMovieTonight/tree/main/DOCUMENTATION/Mockups
 
 ---
 
