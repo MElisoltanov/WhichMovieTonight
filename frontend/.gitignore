@@ -166,4 +166,7 @@ __pycache__/
 # Windows
 Thumbs.db
 
+guide.md
+.copilot-instructions.md
+
 # End of file
