@@ -1,0 +1,17 @@
+# Framework Django principal
+Django>=5.0,<6.0
+
+# Django REST Framework pour créer des API REST
+djangorestframework>=3.14.0
+
+# Gestion des CORS pour permettre les requêtes depuis le frontend
+django-cors-headers>=4.3.0
+
+# Chargement des variables d'environnement depuis un fichier .env
+python-dotenv>=1.0.0
+
+# Adaptateur PostgreSQL pour Django (utilise psycopg2 si besoin d'une version compilée)
+psycopg2-binary>=2.9.9
+
+# Traitement et manipulation d'images
+Pillow>=10.0.0
