@@ -15,3 +15,7 @@ psycopg2-binary>=2.9.9
 
 # Traitement et manipulation d'images
 Pillow>=10.0.0
+
+# Authentification JWT (JSON Web Token) pour Django REST Framework
+djangorestframework-simplejwt>=5.2.2
+
