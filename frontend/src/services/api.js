@@ -56,3 +56,14 @@ api.interceptors.response.use(
         return Promise.reject(error);
     }
 );
+
+export const movieAPI = {
+    getMovies: async (searchQuery = '', page = 1) => {
+        const params = { page };
+        if (serachQuery) {
+            params.search = searchQuery;
+        }
+        const response = await api.get('/movies/', { params });
+        return response.data;
+    },
+}
