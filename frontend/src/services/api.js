@@ -58,12 +58,20 @@ api.interceptors.response.use(
 );
 
 export const movieAPI = {
+    // Fetch movies with optional search query and pagination
     getMovies: async (searchQuery = '', page = 1) => {
         const params = { page };
-        if (serachQuery) {
+        if (searchQuery) {
             params.search = searchQuery;
         }
         const response = await api.get('/movies/', { params });
         return response.data;
     },
+
+    // Get single movie by ID
+    getMovie: async (id) => {
+        const response = await api.get(`/movies/${id}/`);
+    return response.data;
+    },
+    
 }
