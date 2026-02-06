@@ -74,4 +74,9 @@ export const movieAPI = {
     return response.data;
     },
     
+    // Create movie (admin only)
+    createMovie: async (movieData) => {
+        const response = await api.post('/movies/', movieData);
+        return response.data;
+    },
 }
