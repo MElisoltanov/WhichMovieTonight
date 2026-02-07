@@ -91,4 +91,12 @@ export const movieAPI = {
         const response = await api.delete(`/movies/${id}/`);
         return response.data;
     },
+};
+
+export const ratingAPI = {
+    // Get ratings for a movie
+    getRatings: async (movieID) => {
+        const response = await api.get('/ratings/', { params: { movie: movieID } });
+        return response.data;
+    },
 }
