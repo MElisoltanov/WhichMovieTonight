@@ -99,4 +99,10 @@ export const ratingAPI = {
         const response = await api.get('/ratings/', { params: { movie: movieID } });
         return response.data;
     },
+
+    // Create or update rating for a movie (authenticated)
+    createOrUpdateRating: async (movieID, score) => {
+        const response = await api.post('/ratings/', { movie: movieID, score });
+        return response.data;
+    },
 }
