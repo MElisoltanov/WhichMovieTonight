@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt.token_blacklist'
     ,
     'corsheaders',
+    'drf_spectacular',
     'apps.movies.apps.MoviesConfig',
     'apps.ratings.apps.RatingsConfig',
     'apps.comments.apps.CommentsConfig',
@@ -151,6 +152,7 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
 
 # JWT settings
@@ -162,4 +164,26 @@ SIMPLE_JWT = {
     'ROTATE_REFRESH_TOKENS': False,
     'BLACKLIST_AFTER_ROTATION': True,
     'AUTH_HEADER_TYPES': ('Bearer',),
+}
+# DRF Spectacular settings
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Which Movie Tonight API',
+    'DESCRIPTION': 'API pour la gestion de films, notations et commentaires',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+    'COMPONENT_SPLIT_REQUEST': True,
+    'SCHEMA_PATH_PREFIX': r'/api',
+    'SWAGGER_UI_SETTINGS': {
+        'persistAuthorization': True,
+    },
+    'APPEND_COMPONENTS': {
+        'securitySchemes': {
+            'jwtAuth': {
+                'type': 'http',
+                'scheme': 'bearer',
+                'bearerFormat': 'JWT',
+            }
+        }
+    },
+    'SECURITY': [{'jwtAuth': []}],
 }
