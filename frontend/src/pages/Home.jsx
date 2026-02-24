@@ -68,10 +68,47 @@ function Home() {
     if (loading) {
         return (
             <div className="min-h-screen flex items-center justify-center">
+                <div className="text-2xl text-white">Loading movies...</div>
+            </div>
+        )
+    }
+
+    if (error) {
+        return(
+            <div className="min-h-screen flex items-center justify-center">
                 <div className="text-2xl text-red-500">{error}</div>
             </div>
         )
     }
 
+    return (
+        <div className='pt-20 px-4 md:px-12 pb-12'>
+            <div className='mb-12'>
+                <h1 className='text-4xl md:text-5xl font-bold text-white mb-8 text-center'>
+                    Discover Movies
+                </h1>
+                <SearchBar onSearch={handleSearch} />
+            </div>
+
+            {movies.length === 0 ? (
+                <div className='text-center text-white text-xl mt-12'>
+                    No movies found. Try different search.
+                </div>
+            ) : (
+                <>
+                    <div className='grid grid-cols-2 sm:grid-2 lg:grid-cols-4 gap-6'>
+                        {movies.map((movie) => (
+                            <MovieCard key={movie.id} movie={movie} />
+                        ))}
+                    </div>
+
+                    {/* Pagination Controls */}
+                </>
+            )}
+        </div>
+    )
+
 
 }
+
+export default Home
