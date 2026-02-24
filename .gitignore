@@ -1,4 +1,4 @@
-# Python
+# Python/Django
 __pycache__/
 *.py[cod]
 *$py.class
@@ -36,41 +36,146 @@ db.sqlite3-journal
 /media
 /staticfiles
 
-# Environment variables
-.env
-.env.local
-
-# IDEs
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Node
+# Node.js
 node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+pnpm-debug.log
 lerna-debug.log*
 
-# Build
+# Build output
 dist/
 dist-ssr/
+build/
+.tmp/
+.temp/
+.cache/
+out/
+coverage/
 *.local
 
-# Editor directories and files
-.vscode/*
+# Next.js
+.next/
+
+# Nuxt.js
+.nuxt/
+
+# Expo
+.expo/
+web-build/
+
+# Svelte
+.svelte-kit/
+
+# Storybook
+.storybook-out/
+
+# Tests
+jest-coverage/
+
+# TypeScript
+*.tsbuildinfo
+
+# SASS
+.sass-cache/
+
+# Parcel
+.parcel-cache/
+
+# ESLint
+.eslintcache
+
+# Environment files
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log.*
+*.pid
+*.seed
+*.pid.lock
+
+# IDEs and Editors
+.vscode/
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
+.history/
+*.sublime-workspace
+*.sublime-project
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*.swp
+*.swo
+
+# OS - Mac
+.DS_Store
+*.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# OS - Linux
+*~
+
+# OS - Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Archives
+*.tgz
+*.gz
+*.zip
+*.tar
+*.rar
+*.7z
+
+# Binaries
+*.exe
+*.dll
+*.dylib
+*.bin
+
+# Images (if needed to ignore)
+# *.png
+# *.jpg
+# *.jpeg
+# *.gif
+# *.svg
+# *.ico
+
+# Misc
+*.bak
+*.tmp
+*.lock
+
+# Firebase
+.firebase/
+.firebaserc
+
+# Docker
+.docker/
+Dockerfile*
+.dockerignore
+
+# Yarn
+.yarn/
+.pnp.*
+
+# Project specific
+guide.md
+.copilot-instructions.md
+prompt.md
+guide2.md
