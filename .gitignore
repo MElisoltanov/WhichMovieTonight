@@ -5,7 +5,6 @@ __pycache__/
 =======
 # Python/Django
 _pycache_/
->>>>>>> 18e2528 (feat: update gitignore file)
 *.py[cod]
 *$py.class
 *.so
