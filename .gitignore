@@ -1,5 +1,5 @@
 # Python/Django
-__pycache__/
+_pycache_/
 *.py[cod]
 *$py.class
 *.so
@@ -96,7 +96,7 @@ jest-coverage/
 
 # Logs
 logs/
-*.log.*
+.log.
 *.pid
 *.seed
 *.pid.lock
@@ -109,7 +109,7 @@ logs/
 *.sublime-workspace
 *.sublime-project
 *.suo
-*.ntvs*
+.ntvs
 *.njsproj
 *.sln
 *.sw?
