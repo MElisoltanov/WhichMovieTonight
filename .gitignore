@@ -1,6 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Python
 __pycache__/
+=======
+# Python/Django
+_pycache_/
+>>>>>>> 18e2528 (feat: update gitignore file)
 *.py[cod]
 *$py.class
 *.so
@@ -204,6 +209,99 @@ web-build/
 out/
 .storybook-out/
 
+<<<<<<< HEAD
+=======
+# Tests
+jest-coverage/
+
+# TypeScript
+*.tsbuildinfo
+
+# SASS
+.sass-cache/
+
+# Parcel
+.parcel-cache/
+
+# ESLint
+.eslintcache
+
+# Environment files
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+.log.
+*.pid
+*.seed
+*.pid.lock
+
+# IDEs and Editors
+.vscode/
+!.vscode/extensions.json
+.idea/
+.history/
+*.sublime-workspace
+*.sublime-project
+*.suo
+.ntvs
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.swo
+
+# OS - Mac
+.DS_Store
+*.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# OS - Linux
+*~
+
+# OS - Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Archives
+*.tgz
+*.gz
+*.zip
+*.tar
+*.rar
+*.7z
+
+# Binaries
+*.exe
+*.dll
+*.dylib
+*.bin
+
+# Images (if needed to ignore)
+# *.png
+# *.jpg
+# *.jpeg
+# *.gif
+# *.svg
+# *.ico
+
+# Misc
+*.bak
+*.tmp
+*.lock
+
+>>>>>>> 18e2528 (feat: update gitignore file)
 # Firebase
 .firebase/
 .firebaserc
@@ -246,7 +344,11 @@ Thumbs.db
 guide.md
 .copilot-instructions.md
 prompt.md
+<<<<<<< HEAD
 guide2.md
 
 # End of file
 >>>>>>> 02e1530 (feat(frontend): add gitignore file to root of the project)
+=======
+guide2.md
+>>>>>>> 18e2528 (feat: update gitignore file)
